@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int n = 5;
+    int odd = 1;
+    int sum = 0;
+    int sqr = n*n;
+    
+    printf("Odd numbers = ");
+    for(int i= 1; i<=n; i++){
+        printf("%d ", odd);
+        sum = sum + odd;
+        odd = odd + 2;
+    }
+    printf("\n");
+    printf("Sum = %d\n", sum);
+    
+    printf("Square = ");
+    printf("%d\n",sqr);
+    
+    if(sum == sqr){
+        printf("Sum is equal to Square");
+    } else {
+        printf("Sum is not equal to Square");
+    }
+    return 0;
+}
